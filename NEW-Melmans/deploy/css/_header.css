@@ -7,5 +7,5 @@ header > div img {
 }
 header > div #aside {
   display: grid;
-  grid-template-columns: auto 24px;
+  grid-template-columns: auto 209px;
 }

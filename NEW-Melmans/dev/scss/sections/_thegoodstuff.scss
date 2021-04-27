@@ -2,27 +2,82 @@
     The Good Stuff
 ============= */
 
+#thegoodstuff{
 
+    grid-area: thegoodstuff;
 
+    @include sm{
+        display: grid;
+            grid-template-columns: 24px auto 24px;
+    }
 
+    @include md{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "f1 f2"
+            "f3 f4"
+            "f5 f6"
+            "f7 f8"
+            "f9 f10";
+            gap: 16 px;
+    }
+    
+    #description1{
+        @include md{
+            grid-area: f1;
+        }
+    }
 
+    #image1{
+        @include md{
+            grid-area: f2;
+        }
+    }
 
+    #image2{
+        @include md{
+            grid-area: f3;
+        }
+    }
 
+    #description2{
+        @include md{
+            grid-area: f4;
+        }
+    }
 
+    #description3{
+        @include md{
+            grid-area: f5;
+        }
+    }
 
+    #image3{
+        @include md{
+            grid-area: f6;
+        }
+    }
 
-<h1>The Good Stuff</h1>
+    #image4{
+        @include md{
+            grid-area: f7;
+        }
+    }
 
-    <ul>
-        
-        <li id="option1">
-            <div id="description1">
-                <h3>In a Cone</h3>
-                <p>You can’t go wrong with the classic. Our homemade waffle cones are freshly baked every morning.</p>
-                <button><p>See more</p></button>
-            </div>
+    #description4{
+        @include md{
+            grid-area: f8;
+        }
+    }
 
-            <div id="image1">
-                <img src = "img/The_Good_Stuff/in-a-cone-desktop.png" alt="In a Cone">
-            </div>
-        </li>
+    #description5{
+        @include md{
+            grid-area: f9;
+        }
+    }
+
+    #image5{
+        @include md{
+            grid-area: f10;
+        }
+    }
+}

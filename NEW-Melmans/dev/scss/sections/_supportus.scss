@@ -1,3 +1,170 @@
 /* =============
     Support Us
 ============= */
+
+#supportus{
+
+    #supportusbanner{
+        @include sm,md{
+            display: grid;
+            grid-template-columns: 24px auto 24px;
+        }
+    }
+
+    @include sm{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "f1 f2"
+        "f3 f4"
+        "f5 f6"
+        "f7 f7"
+        "f9 f10"
+        "f11 f12"
+        "f13 f14"
+        "f15 f15";
+        gap: 8 px;
+    }
+
+    #button1{
+        @include sm{
+            grid-area: f1;
+        }
+    }
+
+    #button2{
+        @include sm{
+            grid-area: f2;
+        }
+    }
+
+    #button3{
+        @include sm{
+            grid-area: f3;
+        }
+    }
+
+    #button4{
+        @include sm{
+            grid-area: f4;
+        }
+    }
+
+    #button5{
+        @include sm{
+            grid-area: f5;
+        }
+    }
+
+    #button6{
+        @include sm{
+            grid-area: f6;
+        }
+    }
+
+    #customamount{
+        @include sm{
+            grid-area: f7;
+        }
+    }
+
+    #checkmark1{
+        @include sm{
+            grid-area: f9;
+        }
+    }
+
+    #checkmark2{
+        @include sm{
+            grid-area: f11;
+        }
+    }
+
+    #checkmark3{
+        @include sm{
+            grid-area: f13;
+        }
+    }
+    
+    #button7{
+        @include sm{
+            grid-area: f15;
+        }
+    }
+
+    @include md{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "f1 f2 f3"
+        "f4 f5 f6"
+        "f7 f7 f7"
+        "f10 f11 f12"
+        "f13 f14 f15"
+        "f16 f17 f18"
+        "f19 f19 f19";
+        gap: 24 px;
+    }
+
+    #button1{
+        @include md{
+            grid-area: f1;
+        }
+    }
+
+    #button2{
+        @include md{
+            grid-area: f2;
+        }
+    }
+
+    #button3{
+        @include md{
+            grid-area: f3;
+        }
+    }
+
+    #button4{
+        @include md{
+            grid-area: f4;
+        }
+    }
+
+    #button5{
+        @include md{
+            grid-area: f5;
+        }
+    }
+
+    #button6{
+        @include md{
+            grid-area: f6;
+        }
+    }
+
+    #customamount{
+        @include md{
+            grid-area: f7;
+        }
+    }
+
+    #checkmark1{
+        @include md{
+            grid-area: f10;
+        }
+    }
+
+    #checkmark2{
+        @include md{
+            grid-area: f13;
+        }
+    }
+
+    #checkmark3{
+        @include md{
+            grid-area: f16;
+        }
+    }
+    
+    #button7{
+        @include md{
+            grid-area: f19;
+        }
+    }
+}
