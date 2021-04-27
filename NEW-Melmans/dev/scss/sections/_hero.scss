@@ -3,6 +3,18 @@
 ============= */
 
 #hero{
-    img{width: 100%;}
-}
 
+    display: grid;
+    grid-template-columns: 24px auto 24px;
+    grid-template-areas: ". hero .";
+
+    img{
+        grid-area: hero;
+        width: 100%;
+    }
+
+    #intro{
+        grid-template-columns: 24px auto 24px;
+        grid-template-areas: ". intro .";
+    }
+}

@@ -1,6 +1,16 @@
 /* =============
     Hero
 ============= */
+#hero {
+  display: grid;
+  grid-template-columns: 24px auto 24px;
+  grid-template-areas: ". hero .";
+}
 #hero img {
+  grid-area: hero;
   width: 100%;
+}
+#hero #intro {
+  grid-template-columns: 24px auto 24px;
+  grid-template-areas: ". intro .";
 }

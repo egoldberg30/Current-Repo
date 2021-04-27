@@ -1,3 +1,10 @@
 /* =============
     Why We Work
 ============= */
+
+#whywework{
+
+    display: grid;
+    grid-template-columns: 24px auto 24px;
+    grid-template-areas: ". whywework ."
+}

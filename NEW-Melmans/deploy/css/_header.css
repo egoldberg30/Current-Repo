@@ -1,0 +1,11 @@
+/* =============
+    Header
+============= */
+header > div img {
+  width: 100%;
+  padding: 65 px;
+}
+header > div #aside {
+  display: grid;
+  grid-template-columns: auto 24px;
+}

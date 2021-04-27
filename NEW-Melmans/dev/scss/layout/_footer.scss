@@ -12,7 +12,6 @@
     }
 
     @include md{
-        
             grid-template-columns: repeat(2, 1fr);
             grid-template-areas: "f1 f2";
             gap: 24 px;
