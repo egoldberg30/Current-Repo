@@ -103,9 +103,9 @@ html {
     }
 }
 //Usage
-// @include sm{
-//     grid-template-columns: 100%;
-// }
+@include sm{
+grid-template-columns: 100%;
+}
 
 
 // Medium devices
@@ -115,9 +115,9 @@ html {
     }
 }
 //Usage
-// @include md{
-//     grid-template-columns: 20% 80%;
-// }
+@include md{
+grid-template-columns: 50% 50%;
+}
 
 
 // Large devices

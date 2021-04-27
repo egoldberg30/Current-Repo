@@ -2,12 +2,32 @@
     Footer
 ============= */
 
-footer{
-    display: grid;
-    grid-template-columns: 24px auto 24px;
-    grid-template-areas: ". footer .";
 
-    >div{
-        grid-area: footer;
+>footer{
+    grid-area: footer;
+
+    @include sm{
+        display: grid;
+            grid-template-columns: 24px auto 24px;
     }
+
+    @include md{
+        
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "f1 f2";
+            gap: 24 px;
+    }
+    
+    #contact-info{
+        @include md{
+            grid-area: f1;
+        }
+    }
+
+    #signup{
+        include md{
+            grid-area: f2;
+        }
+    }
+
 }

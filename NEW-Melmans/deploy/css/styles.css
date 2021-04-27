@@ -389,3 +389,15 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  display: grid;
+  grid-template-columns: 24px auto 24px;
+  grid-template-areas: ". footer .";
+}
+footer > div {
+  grid-area: footer;
+}
+
+/* =============
+    Why We Work
+============= */
