@@ -386,14 +386,6 @@ textarea {
 /* =============
     Header
 ============= */
-header > div img {
-  width: 20%;
-  padding: 65 px;
-}
-header > div #aside {
-  display: grid;
-  grid-template-columns: auto 209px;
-}
 @media (min-width: 320px) {
   header > div {
     grid-template-columns: repeat(2, 1fr);
