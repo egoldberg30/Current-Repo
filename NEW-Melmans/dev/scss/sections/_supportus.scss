@@ -5,7 +5,7 @@
 #supportus{
 
     #supportusbanner{
-        @include sm,md{
+        @include sm{
             display: grid;
             grid-template-columns: 24px auto 24px;
         }

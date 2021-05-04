@@ -4,9 +4,9 @@
 
 #catering{
 
-    >div
+    >div{
 
-        @include sm,md{
+        @include sm{
             display: grid;
             grid-template-columns: 24px auto 24px;
         }
@@ -40,5 +40,6 @@
         @include md{
             grid-area: f4;
         }
+    }
     }
 }

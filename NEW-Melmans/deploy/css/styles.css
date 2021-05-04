@@ -386,18 +386,306 @@ textarea {
 /* =============
     Header
 ============= */
+header > div img {
+  width: 100%;
+  padding: 65 px;
+}
+header > div #aside {
+  display: grid;
+  grid-template-columns: auto 209px;
+}
+
 /* =============
     Footer
 ============= */
-footer {
+> footer {
+  grid-area: footer;
+}
+@media (min-width: 320px) {
+  > footer {
+    display: grid;
+    grid-template-columns: 24px auto 24px;
+  }
+}
+@media (min-width: 768px) {
+  > footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "f1 f2";
+    gap: 24 px;
+  }
+}
+@media (min-width: 768px) {
+  > footer #contact-info {
+    grid-area: f1;
+  }
+}
+> footer #signup include md {
+  grid-area: f2;
+}
+
+/* =============
+    Catering
+============= */
+@media (min-width: 320px) {
+  #catering > div {
+    display: grid;
+    grid-template-columns: 24px auto 24px;
+  }
+}
+@media (min-width: 768px) {
+  #catering > div {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "f1 f2" "f3 f4";
+    gap: 16 px;
+  }
+}
+@media (min-width: 768px) {
+  #catering > div #choice1 {
+    grid-area: f1;
+  }
+}
+@media (min-width: 768px) {
+  #catering > div #choice2 {
+    grid-area: f2;
+  }
+}
+@media (min-width: 768px) {
+  #catering > div #choice3 {
+    grid-area: f3;
+  }
+}
+@media (min-width: 768px) {
+  #catering > div #choice4 {
+    grid-area: f4;
+  }
+}
+
+/* =============
+    Hero
+============= */
+#hero {
   display: grid;
   grid-template-columns: 24px auto 24px;
-  grid-template-areas: ". footer .";
+  grid-template-areas: ". hero .";
 }
-footer > div {
-  grid-area: footer;
+#hero img {
+  grid-area: hero;
+  width: 100%;
+}
+#hero #intro {
+  grid-template-columns: 24px auto 24px;
+  grid-template-areas: ". intro .";
+}
+
+/* =============
+    Support Us
+============= */
+@media (min-width: 320px) {
+  #supportus #supportusbanner {
+    display: grid;
+    grid-template-columns: 24px auto 24px;
+  }
+}
+@media (min-width: 320px) {
+  #supportus {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "f1 f2" "f3 f4" "f5 f6" "f7 f7" "f9 f10" "f11 f12" "f13 f14" "f15 f15";
+    gap: 8 px;
+  }
+}
+@media (min-width: 320px) {
+  #supportus #button1 {
+    grid-area: f1;
+  }
+}
+@media (min-width: 320px) {
+  #supportus #button2 {
+    grid-area: f2;
+  }
+}
+@media (min-width: 320px) {
+  #supportus #button3 {
+    grid-area: f3;
+  }
+}
+@media (min-width: 320px) {
+  #supportus #button4 {
+    grid-area: f4;
+  }
+}
+@media (min-width: 320px) {
+  #supportus #button5 {
+    grid-area: f5;
+  }
+}
+@media (min-width: 320px) {
+  #supportus #button6 {
+    grid-area: f6;
+  }
+}
+@media (min-width: 320px) {
+  #supportus #customamount {
+    grid-area: f7;
+  }
+}
+@media (min-width: 320px) {
+  #supportus #checkmark1 {
+    grid-area: f9;
+  }
+}
+@media (min-width: 320px) {
+  #supportus #checkmark2 {
+    grid-area: f11;
+  }
+}
+@media (min-width: 320px) {
+  #supportus #checkmark3 {
+    grid-area: f13;
+  }
+}
+@media (min-width: 320px) {
+  #supportus #button7 {
+    grid-area: f15;
+  }
+}
+@media (min-width: 768px) {
+  #supportus {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "f1 f2 f3" "f4 f5 f6" "f7 f7 f7" "f10 f11 f12" "f13 f14 f15" "f16 f17 f18" "f19 f19 f19";
+    gap: 24 px;
+  }
+}
+@media (min-width: 768px) {
+  #supportus #button1 {
+    grid-area: f1;
+  }
+}
+@media (min-width: 768px) {
+  #supportus #button2 {
+    grid-area: f2;
+  }
+}
+@media (min-width: 768px) {
+  #supportus #button3 {
+    grid-area: f3;
+  }
+}
+@media (min-width: 768px) {
+  #supportus #button4 {
+    grid-area: f4;
+  }
+}
+@media (min-width: 768px) {
+  #supportus #button5 {
+    grid-area: f5;
+  }
+}
+@media (min-width: 768px) {
+  #supportus #button6 {
+    grid-area: f6;
+  }
+}
+@media (min-width: 768px) {
+  #supportus #customamount {
+    grid-area: f7;
+  }
+}
+@media (min-width: 768px) {
+  #supportus #checkmark1 {
+    grid-area: f10;
+  }
+}
+@media (min-width: 768px) {
+  #supportus #checkmark2 {
+    grid-area: f13;
+  }
+}
+@media (min-width: 768px) {
+  #supportus #checkmark3 {
+    grid-area: f16;
+  }
+}
+@media (min-width: 768px) {
+  #supportus #button7 {
+    grid-area: f19;
+  }
+}
+
+/* =============
+    The Good Stuff
+============= */
+#thegoodstuff {
+  grid-area: thegoodstuff;
+}
+@media (min-width: 320px) {
+  #thegoodstuff {
+    display: grid;
+    grid-template-columns: 24px auto 24px;
+  }
+}
+@media (min-width: 768px) {
+  #thegoodstuff {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "f1 f2" "f3 f4" "f5 f6" "f7 f8" "f9 f10";
+    gap: 16 px;
+  }
+}
+@media (min-width: 768px) {
+  #thegoodstuff #description1 {
+    grid-area: f1;
+  }
+}
+@media (min-width: 768px) {
+  #thegoodstuff #image1 {
+    grid-area: f2;
+  }
+}
+@media (min-width: 768px) {
+  #thegoodstuff #image2 {
+    grid-area: f3;
+  }
+}
+@media (min-width: 768px) {
+  #thegoodstuff #description2 {
+    grid-area: f4;
+  }
+}
+@media (min-width: 768px) {
+  #thegoodstuff #description3 {
+    grid-area: f5;
+  }
+}
+@media (min-width: 768px) {
+  #thegoodstuff #image3 {
+    grid-area: f6;
+  }
+}
+@media (min-width: 768px) {
+  #thegoodstuff #image4 {
+    grid-area: f7;
+  }
+}
+@media (min-width: 768px) {
+  #thegoodstuff #description4 {
+    grid-area: f8;
+  }
+}
+@media (min-width: 768px) {
+  #thegoodstuff #description5 {
+    grid-area: f9;
+  }
+}
+@media (min-width: 768px) {
+  #thegoodstuff #image5 {
+    grid-area: f10;
+  }
 }
 
 /* =============
     Why We Work
 ============= */
+#whywework {
+  display: grid;
+  grid-template-columns: 24px auto 24px;
+  grid-template-areas: ". whywework .";
+}
