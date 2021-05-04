@@ -403,6 +403,14 @@ textarea {
     grid-area: f2;
   }
 }
+header > div img {
+  width: 20%;
+  padding: 65 px;
+}
+header > div #aside {
+  display: grid;
+  grid-template-columns: auto 209px;
+}
 
 /* =============
     Footer

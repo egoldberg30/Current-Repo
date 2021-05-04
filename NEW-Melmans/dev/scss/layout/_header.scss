@@ -6,8 +6,6 @@ header {
 
 	>div {
 
-
-
         @include sm{
             grid-template-columns: repeat(2, 1fr);
             grid-template-areas: "f1 f2";
@@ -24,6 +22,17 @@ header {
             @include sm{
                 grid-area: f2;
             }
+        }
+
+
+        img {
+			width: 20%;
+            padding: 65 px;
+		}
+
+        #aside{
+            display: grid;
+            grid-template-columns: auto 209px;
         }
 	}
 }
