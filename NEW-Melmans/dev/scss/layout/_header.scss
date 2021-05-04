@@ -15,5 +15,24 @@ header {
             display: grid;
             grid-template-columns: auto 209px;
         }
+
+
+        @include sm{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "f1 f2";
+            gap: 8 px;
+        }
+        
+        img {
+            @include sm{
+                grid-area: f1;
+            }
+        }
+        
+        #aside{
+            @include sm{
+                grid-area: f2;
+            }
+        }
 	}
 }

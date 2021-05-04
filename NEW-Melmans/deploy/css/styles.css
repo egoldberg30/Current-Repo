@@ -394,6 +394,23 @@ header > div #aside {
   display: grid;
   grid-template-columns: auto 209px;
 }
+@media (min-width: 320px) {
+  header > div {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "f1 f2";
+    gap: 8 px;
+  }
+}
+@media (min-width: 320px) {
+  header > div img {
+    grid-area: f1;
+  }
+}
+@media (min-width: 320px) {
+  header > div #aside {
+    grid-area: f2;
+  }
+}
 
 /* =============
     Footer
