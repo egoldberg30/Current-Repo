@@ -387,7 +387,7 @@ textarea {
     Header
 ============= */
 header > div img {
-  width: 100%;
+  width: 20%;
   padding: 65 px;
 }
 header > div #aside {
