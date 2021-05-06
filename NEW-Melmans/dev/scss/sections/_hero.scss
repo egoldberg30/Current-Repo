@@ -16,5 +16,6 @@
     #intro{
         grid-template-columns: 24px auto 24px;
         grid-template-areas: ". intro .";
+        color: $white;
     }
 }

@@ -6,6 +6,10 @@
 
     >div{
 
+        h2{
+            color: $darkpurple
+        }
+
         @include sm{
             display: grid;
             grid-template-columns: 24px auto 24px;
@@ -22,11 +26,19 @@
         @include md{
             grid-area: f1;
         }
+
+        p{
+            color: $darkpurple;
+        }
     }
 
     #choice2{
         @include md{
             grid-area: f2;
+        }
+
+        p{
+            color: $darkpurple;
         }
     }
 
@@ -34,12 +46,21 @@
         @include md{
             grid-area: f3;
         }
+
+        p{
+            color: $darkpurple;
+        }
     }
 
     #choice4{
         @include md{
             grid-area: f4;
         }
+
+        p{
+            color: $darkpurple;
+        }
     }
+    
     }
 }

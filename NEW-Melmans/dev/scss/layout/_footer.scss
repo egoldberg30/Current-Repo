@@ -3,12 +3,14 @@
 ============= */
 
 
->footer{
+footer{
+    display: grid;
     grid-area: footer;
+    background-color: $darkpurple;
+    grid-template-areas: ". footer .";
 
     @include sm{
-        display: grid;
-            grid-template-columns: 24px auto 24px;
+        grid-template-columns: 24px auto 24px;
     }
 
     @include md{
@@ -18,12 +20,18 @@
     }
     
     #contact-info{
+
+        color: $white
+
         @include md{
             grid-area: f1;
         }
     }
 
     #signup{
+
+        color: $white
+
         include md{
             grid-area: f2;
         }

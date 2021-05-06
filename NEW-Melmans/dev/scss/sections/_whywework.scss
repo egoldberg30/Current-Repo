@@ -7,4 +7,8 @@
     display: grid;
     grid-template-columns: 24px auto 24px;
     grid-template-areas: ". whywework ."
+
+    #blockquote{
+        color: $darkpurple
+    }
 }

@@ -3,16 +3,17 @@
 ============= */
 
 button{
-    color: white;
-    background-color: pink;
+    color: $white;
+    background-color $pink;
 }
 
 h1{
-    color:white;
-    background-color: darkpurple;
+    color: $white;
+    background-color: $darkpurple;
     background-size: cover;
+    height: 96px;
 }
 
 h3{
-color: darkpurple;
+color: $darkpurple;
 }

@@ -5,6 +5,8 @@
 header {
 
 	>div {
+        
+            color: $white;
 
         @include sm{
             grid-template-columns: repeat(2, 1fr);

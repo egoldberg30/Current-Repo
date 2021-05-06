@@ -24,6 +24,7 @@
     #description1{
         @include md{
             grid-area: f1;
+            color: $darkpurple;
         }
     }
 
@@ -42,12 +43,14 @@
     #description2{
         @include md{
             grid-area: f4;
+            color: $darkpurple;
         }
     }
 
     #description3{
         @include md{
             grid-area: f5;
+            color: $darkpurple;
         }
     }
 
@@ -66,12 +69,14 @@
     #description4{
         @include md{
             grid-area: f8;
+            color: $darkpurple;
         }
     }
 
     #description5{
         @include md{
             grid-area: f9;
+            color: $darkpurple;
         }
     }
 
