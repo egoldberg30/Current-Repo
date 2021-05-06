@@ -5,11 +5,21 @@
 #supportus{
 
     #supportusbanner{
+
+        color: $darkpurple
+
         @include sm{
             display: grid;
             grid-template-columns: 24px auto 24px;
         }
     }
+
+    #donationform{
+        color: $pink
+        background-color: $white
+    }
+
+
 
     @include sm{
         grid-template-columns: repeat(2, 1fr);

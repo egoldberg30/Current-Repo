@@ -35,6 +35,15 @@ footer{
         include md{
             grid-area: f2;
         }
+
+        #form{
+            color: $darkpurple
+            background-color: $white
+        }
     }
 
+    #copyright{
+
+        color: $white
+    }
 }
