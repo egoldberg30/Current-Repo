@@ -352,6 +352,21 @@ template {
 /* =============
     Base
 ============= */
+button {
+  color: white;
+  background-color: pink;
+}
+
+h1 {
+  color: white;
+  background-color: darkpurple;
+  background-size: cover;
+}
+
+h3 {
+  color: darkpurple;
+}
+
 /* =============
     Typography
 ============= */
