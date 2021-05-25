@@ -6,7 +6,7 @@
 
     #supportusbanner{
 
-        color: $darkpurple
+        color: $darkpurple;
 
         @include sm{
             display: grid;
@@ -15,11 +15,9 @@
     }
 
     #donationform{
-        color: $pink
-        background-color: $white
+        color: $pink;
+        background-color: $white;
     }
-
-
 
     @include sm{
         grid-template-columns: repeat(2, 1fr);

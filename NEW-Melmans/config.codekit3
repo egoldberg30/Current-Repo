@@ -247,14 +247,6 @@
       "oAP" : "\/deploy\/index.html",
       "oF" : 0
     },
-    "\/dev\/content\/++.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/catering.html",
-      "oF" : 3
-    },
     "\/dev\/content\/catering.kit" : {
       "cB" : 0,
       "ft" : 2048,
