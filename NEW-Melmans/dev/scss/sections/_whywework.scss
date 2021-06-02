@@ -6,9 +6,12 @@
 
     display: grid;
     grid-template-columns: 24px auto 24px;
-    grid-template-areas: ". whywework ."
+    grid-template-areas: ". whywework .";
+    width: 300px;
+    color: red;
 
     #blockquote{
-        color: $darkpurple
+        color: red;
+        width: 300px;
     }
 }
