@@ -32,7 +32,7 @@ footer{
 
         color: $white;
 
-        include md{
+        @include md{
             grid-area: f2;
         }
 
