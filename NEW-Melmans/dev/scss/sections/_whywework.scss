@@ -5,10 +5,19 @@
 #whywework{
 
     display: grid;
-    grid-template-columns: 24px auto 24px;
-    grid-template-areas: ". whywework ."
+    grid-template-columns: auto auto auto;
+    grid-template-areas: ". whywework .";
 
     #blockquote{
-        color: $darkpurple
+        color: $darkpurple;
     }
+
+    @include md{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "f1"
+        "f2"
+        "f3";
+        gap: 16 px;
+    }  
 }

@@ -4,6 +4,13 @@
 
 #thegoodstuff{
 
+    #menuheader{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "f1 f1"
+    }
+
+
     grid-area: thegoodstuff;
 
     @include sm{
@@ -11,78 +18,64 @@
             grid-template-columns: 24px auto 24px;
     }
 
-    @include md{
+    #menuoptions{
+
+        @include md{
+            display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-areas: "f1 f2"
-            "f3 f4"
-            "f5 f6"
-            "f7 f8"
-            "f9 f10";
-            gap: 16 px;
+                "f3 f4"
+                "f5 f6"
+                "f7 f8"
+                "f9 f10";
+                gap: 16 px;
+        
+            #description1{
+                grid-area: f1;
+                color: $darkpurple;
+            }
+
+            #image1{
+                grid-area: f2;
+            }
+
+            #image2{
+                grid-area: f3;
+            }
+
+            #description2{
+                grid-area: f4;
+                color: $darkpurple;
+            }
+
+            #description3{
+                grid-area: f5;
+                color: $darkpurple;
+            }
+
+            #image3{
+                grid-area: f6;
+            }
+
+            #image4{
+                grid-area: f7;
+            }
+
+            #description4{
+                grid-area: f8;
+                color: $darkpurple;
+            }
+
+            #description5{
+                grid-area: f9;
+                color: $darkpurple;
+            }
+
+            #image5{
+                grid-area: f10;
+            }
+        }
+
     }
     
-    #description1{
-        @include md{
-            grid-area: f1;
-            color: $darkpurple;
-        }
-    }
-
-    #image1{
-        @include md{
-            grid-area: f2;
-        }
-    }
-
-    #image2{
-        @include md{
-            grid-area: f3;
-        }
-    }
-
-    #description2{
-        @include md{
-            grid-area: f4;
-            color: $darkpurple;
-        }
-    }
-
-    #description3{
-        @include md{
-            grid-area: f5;
-            color: $darkpurple;
-        }
-    }
-
-    #image3{
-        @include md{
-            grid-area: f6;
-        }
-    }
-
-    #image4{
-        @include md{
-            grid-area: f7;
-        }
-    }
-
-    #description4{
-        @include md{
-            grid-area: f8;
-            color: $darkpurple;
-        }
-    }
-
-    #description5{
-        @include md{
-            grid-area: f9;
-            color: $darkpurple;
-        }
-    }
-
-    #image5{
-        @include md{
-            grid-area: f10;
-        }
-    }
 }

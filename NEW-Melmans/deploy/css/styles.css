@@ -352,6 +352,10 @@ template {
 /* =============
     Base
 ============= */
+header, section, footer, aside, nav, article, figure {
+  display: block;
+}
+
 button {
   color: #fff;
   background-color: #EF96B9;
@@ -362,10 +366,26 @@ h1 {
   background-color: #261830;
   background-size: cover;
   height: 96px;
+  font-family: "Lily Script One", cursive;
+  text-align: center, center;
 }
 
 h3 {
   color: #261830;
+  font-family: "Lily Script One", cursive;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+}
+@media (min-width: 320px) {
+  h2 {
+    font-size: 21;
+  }
 }
 
 /* =============
@@ -402,33 +422,18 @@ textarea {
 /* =============
     Header
 ============= */
-header > div {
-  color: #fff;
-}
-@media (min-width: 320px) {
-  header > div {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "f1 f2";
-    gap: 8 px;
-  }
-}
-@media (min-width: 320px) {
-  header > div img {
-    grid-area: f1;
-  }
-}
-@media (min-width: 320px) {
-  header > div #aside {
-    grid-area: f2;
-  }
-}
-header > div img {
-  width: 20%;
-  padding: 65 px;
-}
-header > div #aside {
+header header.grid-container {
   display: grid;
   grid-template-columns: auto 209px;
+  grid-template-areas: "f1 f2";
+}
+header > div #logo {
+  grid-area: f1;
+}
+header > div #donatebutton {
+  grid-area: f2;
+  height: 68px;
+  width: 209px;
 }
 
 /* =============
@@ -438,6 +443,7 @@ footer {
   display: grid;
   grid-area: footer;
   background-color: #261830;
+  background-size: cover;
   grid-template-areas: ". footer .";
 }
 @media (min-width: 320px) {
@@ -531,17 +537,20 @@ footer #copyright {
 ============= */
 #hero {
   display: grid;
-  grid-template-columns: 24px auto 24px;
-  grid-template-areas: ". hero .";
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "f1" "f2";
+  gap: 16 px;
 }
-#hero img {
-  grid-area: hero;
+#hero #heroimage {
+  grid-template-areas: ". heroimage .";
+  grid-area: f1;
   width: 100%;
 }
 #hero #intro {
   grid-template-columns: 24px auto 24px;
   grid-template-areas: ". intro .";
-  color: #fff;
+  color: #261830;
+  grid-area: f2;
 }
 
 /* =============
@@ -691,6 +700,11 @@ footer #copyright {
 #thegoodstuff {
   grid-area: thegoodstuff;
 }
+#thegoodstuff #menuheader {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "f1 f1";
+}
 @media (min-width: 320px) {
   #thegoodstuff {
     display: grid;
@@ -698,64 +712,45 @@ footer #copyright {
   }
 }
 @media (min-width: 768px) {
-  #thegoodstuff {
+  #thegoodstuff #menuoptions {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "f1 f2" "f3 f4" "f5 f6" "f7 f8" "f9 f10";
     gap: 16 px;
   }
-}
-@media (min-width: 768px) {
-  #thegoodstuff #description1 {
+  #thegoodstuff #menuoptions #description1 {
     grid-area: f1;
     color: #261830;
   }
-}
-@media (min-width: 768px) {
-  #thegoodstuff #image1 {
+  #thegoodstuff #menuoptions #image1 {
     grid-area: f2;
   }
-}
-@media (min-width: 768px) {
-  #thegoodstuff #image2 {
+  #thegoodstuff #menuoptions #image2 {
     grid-area: f3;
   }
-}
-@media (min-width: 768px) {
-  #thegoodstuff #description2 {
+  #thegoodstuff #menuoptions #description2 {
     grid-area: f4;
     color: #261830;
   }
-}
-@media (min-width: 768px) {
-  #thegoodstuff #description3 {
+  #thegoodstuff #menuoptions #description3 {
     grid-area: f5;
     color: #261830;
   }
-}
-@media (min-width: 768px) {
-  #thegoodstuff #image3 {
+  #thegoodstuff #menuoptions #image3 {
     grid-area: f6;
   }
-}
-@media (min-width: 768px) {
-  #thegoodstuff #image4 {
+  #thegoodstuff #menuoptions #image4 {
     grid-area: f7;
   }
-}
-@media (min-width: 768px) {
-  #thegoodstuff #description4 {
+  #thegoodstuff #menuoptions #description4 {
     grid-area: f8;
     color: #261830;
   }
-}
-@media (min-width: 768px) {
-  #thegoodstuff #description5 {
+  #thegoodstuff #menuoptions #description5 {
     grid-area: f9;
     color: #261830;
   }
-}
-@media (min-width: 768px) {
-  #thegoodstuff #image5 {
+  #thegoodstuff #menuoptions #image5 {
     grid-area: f10;
   }
 }
@@ -765,7 +760,17 @@ footer #copyright {
 ============= */
 #whywework {
   display: grid;
-  grid-template-columns: 24px auto 24px;
-  grid-template-areas: ". whywework ." #blockquote;
-  grid-template-areas-color: #261830;
+  grid-template-columns: auto auto auto;
+  grid-template-areas: ". whywework .";
+}
+#whywework #blockquote {
+  color: #261830;
+}
+@media (min-width: 768px) {
+  #whywework {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "f1" "f2" "f3";
+    gap: 16 px;
+  }
 }

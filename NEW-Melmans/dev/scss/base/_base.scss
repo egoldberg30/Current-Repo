@@ -2,6 +2,10 @@
     Base
 ============= */
 
+header, section, footer, aside, nav, article, figure{
+    display: block;
+}
+
 button{
     color: $white;
     background-color: $pink;
@@ -12,8 +16,23 @@ h1{
     background-color: $darkpurple;
     background-size: cover;
     height: 96px;
+    font-family: 'Lily Script One', cursive;
+    text-align: center, center;
 }
 
 h3{
-color: $darkpurple;
+    color: $darkpurple;
+    font-family: 'Lily Script One', cursive;
 }
+
+p{
+    font-family: 'Rubik', sans-serif;
+}
+
+h2{
+    font-family: 'Rubik', sans-serif;
+    @include sm{
+        font-size: 21;
+    }
+}
+

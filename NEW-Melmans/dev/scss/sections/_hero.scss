@@ -5,17 +5,21 @@
 #hero{
 
     display: grid;
-    grid-template-columns: 24px auto 24px;
-    grid-template-areas: ". hero .";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "f1"
+    "f2";
+    gap: 16 px;
 
-    img{
-        grid-area: hero;
+   #heroimage{
+        grid-template-areas: ". heroimage .";
+        grid-area: f1;
         width: 100%;
     }
 
     #intro{
         grid-template-columns: 24px auto 24px;
         grid-template-areas: ". intro .";
-        color: $white;
+        color: $darkpurple;
+        grid-area: f2;
     }
 }

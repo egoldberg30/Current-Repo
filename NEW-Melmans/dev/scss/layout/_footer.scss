@@ -7,6 +7,7 @@ footer{
     display: grid;
     grid-area: footer;
     background-color: $darkpurple;
+    background-size: cover;
     grid-template-areas: ". footer .";
 
     @include sm{
