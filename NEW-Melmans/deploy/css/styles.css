@@ -369,6 +369,21 @@ h1 {
   font-family: "Lily Script One", cursive;
   text-align: center, center;
 }
+@media (min-width: 320px) {
+  h1 {
+    font-size: 32pt;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 36pt;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 48pt;
+  }
+}
 
 h3 {
   color: #261830;
@@ -378,13 +393,38 @@ h3 {
 p {
   font-family: "Rubik", sans-serif;
 }
+@media (min-width: 320px) {
+  p {
+    font-size: 14pt;
+  }
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 14pt;
+  }
+}
+@media (min-width: 1024px) {
+  p {
+    font-size: 16pt;
+  }
+}
 
 h2 {
   font-family: "Rubik", sans-serif;
 }
 @media (min-width: 320px) {
   h2 {
-    font-size: 21;
+    font-size: 21pt;
+  }
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 24pt;
+  }
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 32pt;
   }
 }
 
@@ -422,18 +462,31 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  display: grid;
+  position: absolute;
+  grid-template-columns: 65px auto 65px;
+  grid-template-areas: ". header .";
+  background-color: white;
+  background-size: cover;
+  height: 88px;
+}
 header header.grid-container {
   display: grid;
-  grid-template-columns: auto 209px;
-  grid-template-areas: "f1 f2";
+  grid-template-columns: auto auto;
+  grid-template-areas: "f1 f2 f3";
 }
-header > div #logo {
-  grid-area: f1;
+header #logo {
+  grid-area: header;
+  padding: 15px;
 }
-header > div #donatebutton {
-  grid-area: f2;
+header #donatebutton {
+  grid-area: f3;
   height: 68px;
   width: 209px;
+  border-style: none;
+  font-family: "Rubik", sans-serif;
+  color: white;
 }
 
 /* =============
@@ -697,13 +750,18 @@ footer #copyright {
 /* =============
     The Good Stuff
 ============= */
-#thegoodstuff {
-  grid-area: thegoodstuff;
-}
 #thegoodstuff #menuheader {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "f1 f1";
+}
+#thegoodstuff button {
+  height: 31px;
+  width: 194px;
+  font-size: 14pt;
+  line-height: 0pt;
+  border: 0px solid #EF96B9;
+  border-radius: 3px;
 }
 @media (min-width: 320px) {
   #thegoodstuff {

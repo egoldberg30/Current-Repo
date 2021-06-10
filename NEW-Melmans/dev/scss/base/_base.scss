@@ -18,6 +18,18 @@ h1{
     height: 96px;
     font-family: 'Lily Script One', cursive;
     text-align: center, center;
+
+    @include sm{
+        font-size: 32pt;
+    }
+
+    @include md{
+        font-size: 36pt;
+    }
+
+    @include lg{
+        font-size: 48pt;
+    }
 }
 
 h3{
@@ -25,14 +37,35 @@ h3{
     font-family: 'Lily Script One', cursive;
 }
 
+
 p{
     font-family: 'Rubik', sans-serif;
+
+    @include sm{
+        font-size: 14pt;
+    }
+
+    @include md{
+        font-size: 14pt;
+    }
+
+    @include lg{
+        font-size: 16pt;
+    }
 }
 
 h2{
     font-family: 'Rubik', sans-serif;
+
     @include sm{
-        font-size: 21;
+        font-size: 21pt;
+    }
+
+    @include md{
+        font-size: 24pt;
+    }
+
+    @include lg{
+        font-size: 32pt;
     }
 }
-
