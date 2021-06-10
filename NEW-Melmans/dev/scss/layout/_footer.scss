@@ -21,7 +21,7 @@ footer{
     
     #contact-info{
 
-        color: $white
+        color: $white;
 
         @include md{
             grid-area: f1;
@@ -30,20 +30,20 @@ footer{
 
     #signup{
 
-        color: $white
+        color: $white;
 
         include md{
             grid-area: f2;
         }
 
         #form{
-            color: $darkpurple
-            background-color: $white
+            color: $darkpurple;
+            background-color: $white;
         }
     }
 
     #copyright{
 
-        color: $white
+        color: $white;
     }
 }

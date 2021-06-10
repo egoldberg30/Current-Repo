@@ -9,18 +9,6 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
-    "\/deploy\/css\/_base.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/deploy\/css\/_base-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -246,14 +234,6 @@
       "oA" : 0,
       "oAP" : "\/deploy\/index.html",
       "oF" : 0
-    },
-    "\/dev\/content\/++.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/catering.html",
-      "oF" : 3
     },
     "\/dev\/content\/catering.kit" : {
       "cB" : 0,

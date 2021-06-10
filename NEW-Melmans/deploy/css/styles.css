@@ -353,18 +353,19 @@ template {
     Base
 ============= */
 button {
-  color: white;
-  background-color: pink;
+  color: #fff;
+  background-color: #EF96B9;
 }
 
 h1 {
-  color: white;
+  color: #fff;
   background-color: #261830;
   background-size: cover;
+  height: 96px;
 }
 
 h3 {
-  color: darkpurple;
+  color: #261830;
 }
 
 /* =============
@@ -401,6 +402,9 @@ textarea {
 /* =============
     Header
 ============= */
+header > div {
+  color: #fff;
+}
 @media (min-width: 320px) {
   header > div {
     grid-template-columns: repeat(2, 1fr);
@@ -430,34 +434,52 @@ header > div #aside {
 /* =============
     Footer
 ============= */
-> footer {
+footer {
+  display: grid;
   grid-area: footer;
+  background-color: #261830;
+  grid-template-areas: ". footer .";
 }
 @media (min-width: 320px) {
-  > footer {
-    display: grid;
+  footer {
     grid-template-columns: 24px auto 24px;
   }
 }
 @media (min-width: 768px) {
-  > footer {
+  footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "f1 f2";
     gap: 24 px;
   }
 }
+footer #contact-info {
+  color: #fff;
+}
 @media (min-width: 768px) {
-  > footer #contact-info {
+  footer #contact-info {
     grid-area: f1;
   }
 }
-> footer #signup include md {
+footer #signup {
+  color: #fff;
+}
+footer #signup include md {
   grid-area: f2;
+}
+footer #signup #form {
+  color: #261830;
+  background-color: #fff;
+}
+footer #copyright {
+  color: #fff;
 }
 
 /* =============
     Catering
 ============= */
+#catering > div h2 {
+  color: #261830;
+}
 @media (min-width: 320px) {
   #catering > div {
     display: grid;
@@ -476,20 +498,32 @@ header > div #aside {
     grid-area: f1;
   }
 }
+#catering > div #choice1 p {
+  color: #261830;
+}
 @media (min-width: 768px) {
   #catering > div #choice2 {
     grid-area: f2;
   }
+}
+#catering > div #choice2 p {
+  color: #261830;
 }
 @media (min-width: 768px) {
   #catering > div #choice3 {
     grid-area: f3;
   }
 }
+#catering > div #choice3 p {
+  color: #261830;
+}
 @media (min-width: 768px) {
   #catering > div #choice4 {
     grid-area: f4;
   }
+}
+#catering > div #choice4 p {
+  color: #261830;
 }
 
 /* =============
@@ -507,16 +541,24 @@ header > div #aside {
 #hero #intro {
   grid-template-columns: 24px auto 24px;
   grid-template-areas: ". intro .";
+  color: #fff;
 }
 
 /* =============
     Support Us
 ============= */
+#supportus #supportusbanner {
+  color: #261830;
+}
 @media (min-width: 320px) {
   #supportus #supportusbanner {
     display: grid;
     grid-template-columns: 24px auto 24px;
   }
+}
+#supportus #donationform {
+  color: #EF96B9;
+  background-color: #fff;
 }
 @media (min-width: 320px) {
   #supportus {
@@ -665,6 +707,7 @@ header > div #aside {
 @media (min-width: 768px) {
   #thegoodstuff #description1 {
     grid-area: f1;
+    color: #261830;
   }
 }
 @media (min-width: 768px) {
@@ -680,11 +723,13 @@ header > div #aside {
 @media (min-width: 768px) {
   #thegoodstuff #description2 {
     grid-area: f4;
+    color: #261830;
   }
 }
 @media (min-width: 768px) {
   #thegoodstuff #description3 {
     grid-area: f5;
+    color: #261830;
   }
 }
 @media (min-width: 768px) {
@@ -700,11 +745,13 @@ header > div #aside {
 @media (min-width: 768px) {
   #thegoodstuff #description4 {
     grid-area: f8;
+    color: #261830;
   }
 }
 @media (min-width: 768px) {
   #thegoodstuff #description5 {
     grid-area: f9;
+    color: #261830;
   }
 }
 @media (min-width: 768px) {
@@ -719,5 +766,6 @@ header > div #aside {
 #whywework {
   display: grid;
   grid-template-columns: 24px auto 24px;
-  grid-template-areas: ". whywework .";
+  grid-template-areas: ". whywework ." #blockquote;
+  grid-template-areas-color: #261830;
 }
