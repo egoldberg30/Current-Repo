@@ -45,14 +45,18 @@
 
     #cateringbanner{
         background-image: url('../img/catering/catering-banner-image-desktop-HD.png');
+        display: flex;
+        justify-content: center;
+        align-items: center
     }
     
    .cateringservices{
+        height: 345px;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         color: $darkpurple;
-        height: 345px;
 
         @include sm{
             width: 266px;

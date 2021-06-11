@@ -11,11 +11,12 @@
     h2{
         color: $darkpurple;
         text-align: center;
+        position: relative;
         font-style: light;
         width: 268px;
     }
 
-    @include md{
+    @include sm{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "f1"
