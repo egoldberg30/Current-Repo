@@ -364,10 +364,11 @@ button {
 h1 {
   color: #fff;
   background-color: #261830;
-  background-size: cover;
   height: 96px;
+  background-size: cover;
   font-family: "Lily Script One", cursive;
-  text-align: center, center;
+  text-align: center;
+  line-height: 94px;
 }
 @media (min-width: 320px) {
   h1 {
@@ -388,6 +389,21 @@ h1 {
 h3 {
   color: #261830;
   font-family: "Lily Script One", cursive;
+}
+@media (min-width: 320px) {
+  h3 {
+    font-size: 21pt;
+  }
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 24pt;
+  }
+}
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 32pt;
+  }
 }
 
 p {
@@ -463,30 +479,23 @@ textarea {
     Header
 ============= */
 header {
-  display: grid;
-  position: absolute;
-  grid-template-columns: 65px auto 65px;
-  grid-template-areas: ". header .";
   background-color: white;
   background-size: cover;
   height: 88px;
 }
-header header.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-areas: "f1 f2 f3";
-}
 header #logo {
   grid-area: header;
   padding: 15px;
+  float: left;
 }
-header #donatebutton {
-  grid-area: f3;
-  height: 68px;
+header button {
+  height: 88px;
   width: 209px;
+  float: right;
   border-style: none;
-  font-family: "Rubik", sans-serif;
-  color: white;
+  font-family: !important "Rubik", sans-serif;
+  font-size: 30px;
+  color: !important white;
 }
 
 /* =============
@@ -536,74 +545,158 @@ footer #copyright {
 /* =============
     Catering
 ============= */
-#catering > div h2 {
-  color: #261830;
+@media (min-width: 320px) {
+  #catering img {
+    width: 268px;
+  }
+}
+@media (min-width: 768px) {
+  #catering img {
+    width: 271px;
+  }
+}
+@media (min-width: 1024px) {
+  #catering img {
+    width: 406px;
+  }
 }
 @media (min-width: 320px) {
-  #catering > div {
-    display: grid;
-    grid-template-columns: 24px auto 24px;
+  #catering p {
+    width: 243px;
   }
 }
 @media (min-width: 768px) {
-  #catering > div {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "f1 f2" "f3 f4";
-    gap: 16 px;
+  #catering p {
+    width: 245px;
+  }
+}
+@media (min-width: 1024px) {
+  #catering p {
+    width: 321px;
+  }
+}
+#catering button {
+  height: 31px;
+  width: 194px;
+  font-size: 14pt;
+  line-height: 0pt;
+  border: 0px-solid #EF96B9;
+  border-radius: 3px;
+  color: !important white;
+  margin-bottom: 32px;
+  border-style: none;
+  position: relative;
+  text-align: center;
+}
+#catering #cateringbanner {
+  background-image: url("../img/catering/catering-banner-image-desktop-HD.png");
+}
+#catering .cateringservices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #261830;
+  height: 345px;
+}
+@media (min-width: 320px) {
+  #catering .cateringservices {
+    width: 266px;
+    text-align: center;
+    margin-bottom: 16px;
   }
 }
 @media (min-width: 768px) {
-  #catering > div #choice1 {
+  #catering .cateringservices {
+    width: 659px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #catering .cateringservices {
+    width: 874px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+@media (min-width: 768px) {
+  #catering .choice1 {
     grid-area: f1;
+    color: #261830;
   }
 }
-#catering > div #choice1 p {
-  color: #261830;
-}
 @media (min-width: 768px) {
-  #catering > div #choice2 {
+  #catering .choice2 {
     grid-area: f2;
+    color: #261830;
   }
 }
-#catering > div #choice2 p {
-  color: #261830;
-}
 @media (min-width: 768px) {
-  #catering > div #choice3 {
+  #catering .choice3 {
     grid-area: f3;
+    color: #261830;
   }
-}
-#catering > div #choice3 p {
-  color: #261830;
 }
 @media (min-width: 768px) {
-  #catering > div #choice4 {
+  #catering .choice4 {
     grid-area: f4;
+    color: #261830;
   }
-}
-#catering > div #choice4 p {
-  color: #261830;
 }
 
 /* =============
     Hero
 ============= */
-#hero {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-areas: "f1" "f2";
-  gap: 16 px;
-}
 #hero #heroimage {
-  grid-template-areas: ". heroimage .";
-  grid-area: f1;
   width: 100%;
 }
 #hero #intro {
-  grid-template-columns: 24px auto 24px;
-  grid-template-areas: ". intro .";
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "f1" "f2";
+  gap: 16px;
   color: #261830;
+}
+#hero #intro h2 {
+  grid-template-areas: ". h2 .";
+  grid-area: f1;
+}
+@media (min-width: 320px) {
+  #hero #intro h2 {
+    width: 248px;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  #hero #intro h2 {
+    width: 768px;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  #hero #intro h2 {
+    width: 874px;
+    text-align: center;
+  }
+}
+#hero #intro p {
+  grid-template-areas: ". p .";
   grid-area: f2;
+}
+@media (min-width: 320px) {
+  #hero #intro p {
+    width: 248px;
+  }
+}
+@media (min-width: 768px) {
+  #hero #intro p {
+    width: 386px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero #intro p {
+    width: 442px;
+  }
 }
 
 /* =============
@@ -611,16 +704,13 @@ footer #copyright {
 ============= */
 #supportus #supportusbanner {
   color: #261830;
-}
-@media (min-width: 320px) {
-  #supportus #supportusbanner {
-    display: grid;
-    grid-template-columns: 24px auto 24px;
-  }
+  text-align: center;
 }
 #supportus #donationform {
   color: #EF96B9;
   background-color: #fff;
+  text-align: center;
+  margin-top: 24px;
 }
 @media (min-width: 320px) {
   #supportus {
@@ -750,6 +840,39 @@ footer #copyright {
 /* =============
     The Good Stuff
 ============= */
+#thegoodstuff img {
+  margin-bottom: 32px;
+}
+@media (min-width: 320px) {
+  #thegoodstuff img {
+    width: 268px;
+  }
+}
+@media (min-width: 768px) {
+  #thegoodstuff img {
+    width: 288px;
+  }
+}
+@media (min-width: 1024px) {
+  #thegoodstuff img {
+    width: 406px;
+  }
+}
+@media (min-width: 320px) {
+  #thegoodstuff p {
+    width: 268px;
+  }
+}
+@media (min-width: 768px) {
+  #thegoodstuff p {
+    width: 271px;
+  }
+}
+@media (min-width: 1024px) {
+  #thegoodstuff p {
+    width: 273px;
+  }
+}
 #thegoodstuff #menuheader {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -759,14 +882,17 @@ footer #copyright {
   height: 31px;
   width: 194px;
   font-size: 14pt;
+  text-align: center;
   line-height: 0pt;
   border: 0px solid #EF96B9;
   border-radius: 3px;
+  margin-bottom: 32px;
 }
 @media (min-width: 320px) {
   #thegoodstuff {
     display: grid;
     grid-template-columns: 24px auto 24px;
+    gap: 16 px;
   }
 }
 @media (min-width: 768px) {
@@ -774,41 +900,40 @@ footer #copyright {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "f1 f2" "f3 f4" "f5 f6" "f7 f8" "f9 f10";
-    gap: 16 px;
   }
-  #thegoodstuff #menuoptions #description1 {
+  #thegoodstuff #menuoptions .description1 {
     grid-area: f1;
     color: #261830;
   }
-  #thegoodstuff #menuoptions #image1 {
+  #thegoodstuff #menuoptions .image1 {
     grid-area: f2;
   }
-  #thegoodstuff #menuoptions #image2 {
+  #thegoodstuff #menuoptions .image2 {
     grid-area: f3;
   }
-  #thegoodstuff #menuoptions #description2 {
+  #thegoodstuff #menuoptions .description2 {
     grid-area: f4;
     color: #261830;
   }
-  #thegoodstuff #menuoptions #description3 {
+  #thegoodstuff #menuoptions .description3 {
     grid-area: f5;
     color: #261830;
   }
-  #thegoodstuff #menuoptions #image3 {
+  #thegoodstuff #menuoptions .image3 {
     grid-area: f6;
   }
-  #thegoodstuff #menuoptions #image4 {
+  #thegoodstuff #menuoptions .image4 {
     grid-area: f7;
   }
-  #thegoodstuff #menuoptions #description4 {
+  #thegoodstuff #menuoptions .description4 {
     grid-area: f8;
     color: #261830;
   }
-  #thegoodstuff #menuoptions #description5 {
+  #thegoodstuff #menuoptions .description5 {
     grid-area: f9;
     color: #261830;
   }
-  #thegoodstuff #menuoptions #image5 {
+  #thegoodstuff #menuoptions .image5 {
     grid-area: f10;
   }
 }
@@ -821,8 +946,11 @@ footer #copyright {
   grid-template-columns: auto auto auto;
   grid-template-areas: ". whywework .";
 }
-#whywework #blockquote {
+#whywework h2 {
   color: #261830;
+  text-align: center;
+  font-style: light;
+  width: 268px;
 }
 @media (min-width: 768px) {
   #whywework {

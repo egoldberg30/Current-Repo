@@ -4,63 +4,102 @@
 
 #catering{
 
-    >div{
 
-        h2{
-            color: $darkpurple;
-        }
-
+    img{
         @include sm{
-            display: grid;
-            grid-template-columns: 24px auto 24px;
+            width: 268px;
         }
-
-    @include md{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "f1 f2"
-        "f3 f4";
-        gap: 16 px;
-    }
-
-    #choice1{
         @include md{
-            grid-area: f1;
+            width: 271px;
         }
-
-        p{
-            color: $darkpurple;
+        @include lg{
+            width: 406px;
         }
     }
 
-    #choice2{
-        @include md{
-            grid-area: f2;
+    p{
+        @include sm{
+            width: 243px;
         }
-
-        p{
-            color: $darkpurple;
+        @include md{
+            width: 245px;
+        }
+        @include lg{
+            width: 321px; 
         }
     }
 
-    #choice3{
-        @include md{
-            grid-area: f3;
-        }
-
-        p{
-            color: $darkpurple;
-        }
+    button{
+        height: 31px;
+        width: 194px;
+        font-size: 14pt;
+        line-height: 0pt;
+        border: 0px-solid $pink;
+        border-radius: 3px;
+        color: !important white;
+        margin-bottom: 32px;
+        border-style: none;
+        position: relative;
+        text-align: center;
     }
 
-    #choice4{
-        @include md{
-            grid-area: f4;
-        }
-
-        p{
-            color: $darkpurple;
-        }
+    #cateringbanner{
+        background-image: url('../img/catering/catering-banner-image-desktop-HD.png');
     }
     
+   .cateringservices{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $darkpurple;
+        height: 345px;
+
+        @include sm{
+            width: 266px;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        @include md{
+            width: 659px;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        @include lg{
+            width: 874px;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+    }
+
+
+
+
+
+    .choice1{
+        @include md{
+            grid-area: f1;
+            color: $darkpurple;
+        }
+        
+    }
+    .choice2{
+        @include md{
+            grid-area: f2;
+            color: $darkpurple;
+        }
+    }
+
+    .choice3{
+        @include md{
+            grid-area: f3;
+            color: $darkpurple;
+        }
+    }
+
+    .choice4{
+        @include md{
+            grid-area: f4;
+            color: $darkpurple;
+        }
     }
 }

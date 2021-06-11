@@ -7,16 +7,14 @@
     #supportusbanner{
 
         color: $darkpurple;
-
-        @include sm{
-            display: grid;
-            grid-template-columns: 24px auto 24px;
-        }
+        text-align: center;
     }
 
     #donationform{
         color: $pink;
         background-color: $white;
+        text-align: center;
+        margin-top: 24px;
     }
 
 

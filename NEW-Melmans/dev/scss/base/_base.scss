@@ -14,19 +14,18 @@ button{
 h1{
     color: $white;
     background-color: $darkpurple;
-    background-size: cover;
     height: 96px;
+    background-size: cover;
     font-family: 'Lily Script One', cursive;
-    text-align: center, center;
+    text-align: center;
+    line-height: 94px;
 
     @include sm{
         font-size: 32pt;
     }
-
     @include md{
         font-size: 36pt;
     }
-
     @include lg{
         font-size: 48pt;
     }
@@ -35,6 +34,15 @@ h1{
 h3{
     color: $darkpurple;
     font-family: 'Lily Script One', cursive;
+    @include sm{
+        font-size: 21pt;
+    }
+    @include md{
+        font-size: 24pt;
+    }
+    @include lg{
+        font-size: 32pt;
+    }
 }
 
 
@@ -44,11 +52,9 @@ p{
     @include sm{
         font-size: 14pt;
     }
-
     @include md{
         font-size: 14pt;
     }
-
     @include lg{
         font-size: 16pt;
     }

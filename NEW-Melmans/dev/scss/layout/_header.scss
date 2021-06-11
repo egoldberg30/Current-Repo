@@ -3,31 +3,23 @@
 ============= */
 
 header {
-    display: grid;
-    position: absolute;
-    grid-template-columns: 65px auto 65px;
-    grid-template-areas: ". header .";
     background-color: white;
     background-size: cover;
     height: 88px;
-    
-    header.grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-areas: "f1 f2 f3";
-    }
 	
     #logo{
         grid-area: header;
         padding: 15px;
+        float: left;
     }
 
-    #donatebutton{
-        grid-area: f3;
-        height: 68px;
+    button {
+        height: 88px;
         width: 209px;
+        float: right;
         border-style: none;
-        font-family: 'Rubik', sans-serif;
-        color: white;
+        font-family: !important 'Rubik', sans-serif;
+        font-size: 30px;
+        color: !important white;
     }
 }

@@ -4,6 +4,34 @@
 
 #thegoodstuff{
 
+    img{
+        margin-bottom: 32px;
+
+        @include sm{
+            width: 268px;
+        }
+        @include md{
+            width: 288px;
+        }
+        @include lg{
+            width: 406px;
+        }
+    }
+
+    p{
+        @include sm{
+            width: 268px;
+        }
+        @include md{
+            width: 271px;
+        }
+        @include lg{
+            width: 273px; 
+        }
+    }
+
+
+
     #menuheader{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -14,15 +42,18 @@
         height: 31px;
         width: 194px;
         font-size: 14pt;
+        text-align: center;
         line-height: 0pt;
         border: 0px solid $pink;
         border-radius: 3px;
+        margin-bottom: 32px;
     }
     
 
     @include sm{
         display: grid;
             grid-template-columns: 24px auto 24px;
+            gap: 16 px;
     }
 
     #menuoptions{
@@ -35,54 +66,53 @@
                 "f5 f6"
                 "f7 f8"
                 "f9 f10";
-                gap: 16 px;
         
-            #description1{
+            .description1{
                 grid-area: f1;
                 color: $darkpurple;
             }
 
-            #image1{
+            .image1{
                 grid-area: f2;
             }
 
-            #image2{
+            .image2{
                 grid-area: f3;
             }
 
-            #description2{
+            .description2{
                 grid-area: f4;
                 color: $darkpurple;
             }
 
-            #description3{
+            .description3{
                 grid-area: f5;
                 color: $darkpurple;
             }
 
-            #image3{
+            .image3{
                 grid-area: f6;
             }
 
-            #image4{
+            .image4{
                 grid-area: f7;
             }
 
-            #description4{
+            .description4{
                 grid-area: f8;
                 color: $darkpurple;
             }
 
-            #description5{
+            .description5{
                 grid-area: f9;
                 color: $darkpurple;
             }
 
-            #image5{
+            .image5{
                 grid-area: f10;
             }
         }
 
     }
-    
+     
 }

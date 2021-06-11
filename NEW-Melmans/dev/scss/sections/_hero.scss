@@ -4,22 +4,48 @@
 
 #hero{
 
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "f1"
-    "f2";
-    gap: 16 px;
-
    #heroimage{
-        grid-template-areas: ". heroimage .";
-        grid-area: f1;
         width: 100%;
     }
 
     #intro{
-        grid-template-columns: 24px auto 24px;
-        grid-template-areas: ". intro .";
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "f1"
+        "f2";
+        gap: 16px;
         color: $darkpurple;
-        grid-area: f2;
+
+        h2{
+            grid-template-areas: ". h2 .";
+            grid-area: f1;
+
+            @include sm{
+                width: 248px;
+                text-align: center;
+            }
+            @include md{
+                width: 768px;
+                text-align: center;
+            }
+            @include lg{
+                width: 874px;
+                text-align: center;
+            }
+        }
+
+        p{
+            grid-template-areas: ". p .";
+            grid-area: f2;
+            @include sm{
+                width: 248px;
+            }
+            @include md{
+                width: 386px;
+            }
+            @include lg{
+                width: 442px;
+            }
+        }
     }
 }
